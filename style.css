@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'font/akashiregular';
+    src: url('font/akashi-webfont.eot');
+    src: url('font/akashi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/akashi-webfont.woff') format('woff'),
+         url('font/akashi-webfont.ttf') format('truetype'),
+         url('font/akashi-webfont.svg#akashiregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	background-color: #000;
+	font-family: 'font/akashiregular';
+	font-size: 124px;
+}
+
+canvas {
+	margin: 0 auto;
+}
+
+#container {
+	width: 100%;
+	height: 960px;
+	background-color: #000;
+	margin: 20 auto;
+	position: relative;
+}
+
+#textbox {
+	height: 90%;
+	width: 79%;
+	position: absolute;
+	top: 5.5%;
+	left: 10.5%;
+	opacity: .1;
+	background-color: #00ffff;
+}
+
+.words {
+	position:absolute;
+	width: 82%;
+	left: 13%;
+	top: -3%;
+	font-size: 100%;
+	color: #000;
+	text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;  
+}
+.sent-from {
+	position:absolute;
+	width: 82%;
+	left: 65%;
+	top: 51%;
+	font-size: 19%;
+	color: #fff;
+}
+.hover-card {
+	position:absolute;
+	width: 14%;
+	left: 85%;
+	top: 1%;
+	font-size: 10%;
+	color: #000;
+}
+
+
+
+@media (max-width: 1208px) {
+	#textbox {
+		height: 85%;
+}
+
+@media (max-width: 1086px) {
+	#textbox {
+		height: 80%;
+}
+@media (max-width: 845px) {
+	.sent-from {
+		top:61%;
+	}
+	.sent-from {
+		font-size: 18%;
+		color: #fff;
+		top:45%;
+	}
+	.words {
+		font-size: 75%;
+	}
+	.hover-card {
+		left:70%;
+		width:20%;
+	}
+}
+
+@media (max-width: 768px) {
+	#textbox {
+		height: 53%;
+	}
+	.sent-from {
+		font-size: 15%;
+		color: #fff;
+		top:45%;
+	}
+	.words {
+		font-size: 75%;
+	}
+}
+
+@media (max-width: 595px) {
+	.sent-from {
+		font-size: 10%;
+		color: #fff;
+		top:45%;
+	}
+	.words {
+		font-size: 60%;
+	}
+	.hover-card {
+		left:70%;
+	}
+}
+@media (max-width: 455px) {
+	.sent-from {
+		font-size: 10%;
+		color: #fff;
+		top:35%;
+	}
+	.words {
+		font-size: 50%;
+	}
+	.hover-card {
+		display: none;
+	}
+}
+
+@media (max-device-width: 340px) {
+	.sent-from {
+		font-size: 30px;
+		color: #fff;
+		top:50%;
+	}
+	.words {
+		font-size: 90px;
+	}
+	.hover-card {
+		display: none;
+	}
+}
